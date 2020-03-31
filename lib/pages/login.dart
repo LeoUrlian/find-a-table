@@ -1,6 +1,7 @@
 import 'package:finda_a_table/pages/cadastrar.dart';
 import 'package:finda_a_table/pages/recuperar-senha.dart';
 import 'package:flutter/material.dart';
+import 'home.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -106,12 +107,12 @@ class _LoginPageState extends State<LoginPage> {
                 child: SizedBox.expand(
                   child: FlatButton(
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => Home(),
-                      //   ),
-                      // );
+                       Navigator.push(
+                         context,
+                         MaterialPageRoute(
+                           builder: (context) => Home(),
+                         ),
+                       );
                     },
                     child: Text(
                       "Aventurar!!!",
